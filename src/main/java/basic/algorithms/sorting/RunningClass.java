@@ -6,7 +6,8 @@ public class RunningClass {
 
 	public static void main(String[] args) {
 
-		checkBubbleSortRecursive();
+//		checkBubbleSortRecursive();
+		checkInsertionSortRecursive();
 	}
 
 	private static void checkInsertionSort() {
@@ -18,6 +19,16 @@ public class RunningClass {
 
 		printArray(array);
 
+	}
+	
+	private static void checkInsertionSortRecursive() {
+		int[] array = UNSORTED_ARRAY;
+
+		printArray(array);
+
+		Insertion.recursive(array, array.length);
+
+		printArray(array);
 	}
 
 	private static void checkBubbleSort() {
